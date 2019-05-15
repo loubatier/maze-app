@@ -17,14 +17,19 @@ class ViewController: UIViewController, UIDynamicAnimatorDelegate, UICollisionBe
 
     @IBOutlet weak var ball: UIView!
     @IBOutlet weak var finishArea: UIView!
-    @IBOutlet weak var wall1: UIView!
-    @IBOutlet weak var wall2: UIView!
     
     var grav: UIGravityBehavior!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let wall1 = UIView(frame: CGRect(x: 0, y: self.view.frame.height - 200, width: 275, height: 200))
+        wall1.backgroundColor = UIColor(displayP3Red: 230/255, green: 118/255, blue: 118/255, alpha: 1)
+        view.addSubview(wall1)
+        
+        let wall2 = UIView(frame: CGRect(x: self.view.frame.width - 275, y: (self.view.frame.height / 2) - 40, width: 275, height: 80))
+        wall2.backgroundColor = UIColor(displayP3Red: 230/255, green: 118/255, blue: 118/255, alpha: 1)
+        view.addSubview(wall2)
         
 
         ball.layer.cornerRadius = 25
