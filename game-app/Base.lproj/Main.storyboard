@@ -18,13 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u2a-qA-K3J">
-                                <rect key="frame" x="182" y="423" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2a-qA-K3J">
+                                <rect key="frame" x="182" y="84" width="50" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.3921568627" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="u2a-qA-K3J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="62M-sz-Z8a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u2a-qA-K3J" secondAttribute="bottom" constant="728" id="DdA-QK-Ec9"/>
+                            <constraint firstItem="u2a-qA-K3J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="PLz-JI-M44"/>
+                            <constraint firstItem="u2a-qA-K3J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="182" id="kBb-QT-Sli"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
