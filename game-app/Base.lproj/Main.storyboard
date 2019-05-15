@@ -18,22 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FY9-wJ-V3e">
+                                <rect key="frame" x="20" y="82" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.45882352939999999" green="0.74509803919999995" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Yao-ba-9UC"/>
+                                    <constraint firstAttribute="width" constant="60" id="kq3-Zw-nMg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OU0-Th-cti">
+                                <rect key="frame" x="0.0" y="626" width="292" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2a-qA-K3J">
                                 <rect key="frame" x="182" y="84" width="50" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.3921568627" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dyz-Dy-QI2">
+                                <rect key="frame" x="100" y="423" width="314" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.62352941179999999" green="0.62352941179999999" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="u2a-qA-K3J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="62M-sz-Z8a"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="u2a-qA-K3J" secondAttribute="bottom" constant="728" id="DdA-QK-Ec9"/>
+                            <constraint firstItem="FY9-wJ-V3e" firstAttribute="top" secondItem="u2a-qA-K3J" secondAttribute="top" constant="-2" id="DkA-mc-sz8"/>
                             <constraint firstItem="u2a-qA-K3J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="PLz-JI-M44"/>
+                            <constraint firstItem="FY9-wJ-V3e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YsI-Ct-5U7"/>
                             <constraint firstItem="u2a-qA-K3J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="182" id="kBb-QT-Sli"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="ball" destination="u2a-qA-K3J" id="nck-2E-T3p"/>
+                        <outlet property="finishArea" destination="FY9-wJ-V3e" id="wKw-p3-Uaf"/>
+                        <outlet property="wall1" destination="OU0-Th-cti" id="Bwr-U5-brP"/>
+                        <outlet property="wall2" destination="dyz-Dy-QI2" id="htd-ei-6s9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
